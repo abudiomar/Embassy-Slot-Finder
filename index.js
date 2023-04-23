@@ -31,7 +31,6 @@ async function start() {
         await delay(60000)
 
         const browser = await puppeteer.launch({
-            executablePath: 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
             headless: true
         });
         const page = await browser.newPage();
